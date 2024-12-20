@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Library library = new Library();
-        Book fzd = new Book("sgds","qzf","dzqf23");
         while (true) {
             System.out.println("\n=== Menu ===");
             System.out.println("1. Afficher les livres");
