@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 
 public class Library {
-    private ArrayList<Book> books;
+    private  List<Book> books;
 
 
     public Library() {
@@ -10,7 +10,17 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        books.add(book);
+           boolean found = false;
+      for (Book book : books) {
+          found = false;
+          if (book.getIsbn().toLowerCase().equals(book1.getIsbn().toLowerCase())) {
+              found = true;
+              System.out.println("ce livre isbn existe deja");
+          }
+      }
+      if (!found) {
+          books.add(book1);
+      }
     }
 
 
